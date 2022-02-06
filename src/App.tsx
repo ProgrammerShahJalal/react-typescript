@@ -1,4 +1,5 @@
 import './App.css';
+import { Button } from './components/Button';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Inner } from './components/Inner';
@@ -36,6 +37,7 @@ function App() {
       <Inner>
         <Heading>Inner element inner text</Heading>
       </Inner>
+      <Button handleClick={() => { console.log('Button Clicked') }} />
     </div>
   );
 }
