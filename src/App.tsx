@@ -3,6 +3,7 @@ import { Button } from './components/Button';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Inner } from './components/Inner';
+import { Input } from './components/Input';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
@@ -37,7 +38,8 @@ function App() {
       <Inner>
         <Heading>Inner element inner text</Heading>
       </Inner>
-      <Button handleClick={() => { console.log('Button Clicked') }} />
+      <Button handleClick={(event, id) => { console.log('Button Clicked', event, id) }} />
+      <Input value='' handleChange={(event) => { console.log(event) }} />
     </div>
   );
 }
