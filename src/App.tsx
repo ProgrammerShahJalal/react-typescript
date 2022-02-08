@@ -7,6 +7,7 @@ import { Inner } from './components/Inner';
 import { Input } from './components/Input';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { LoggedIn } from './components/state/LoggedIn';
 import { Status } from './components/Status';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       <Button handleClick={(event, id) => { console.log('Button Clicked', event, id) }} />
       <Input value='' handleChange={(event) => { console.log(event) }} />
       <Container styles={{ border: '1px solid black', padding: '1rem', margin: '3rem' }} />
+      <LoggedIn />
     </div>
   );
 }
